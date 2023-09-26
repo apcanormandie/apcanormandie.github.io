@@ -39,19 +39,24 @@
     }
 
     .image-container {
-        flex-direction: column; 
-        margin: 10px 0;
+        flex-direction: column; /* Empilez les images verticalement */
+        margin: 20px 0; /* Ajoutez de l'espace autour des images */
     }
 
     .image-box {
-        margin: 10px 0; 
+        margin: 10px 0; /* Ajoutez de l'espace entre les images */
+        transition: margin 0.3s ease-in-out; /* Ajoutez une transition de marge */
+    }
+
+    .image-box:hover {
+        margin: 20px 0; /* Augmentez l'espace entre les images au survol */
     }
 
     .image-container img {
-        max-width: 100%; 
-        height: auto; 
+        max-width: 100%; /* Ajustez la largeur maximale des images pour s'adapter à la taille du conteneur */
+        height: auto; /* Laissez la hauteur ajustée automatiquement pour préserver les proportions */
     }
-
+    
     .legend p {
         margin-top: 10px; 
     }
@@ -203,7 +208,7 @@ footer {
     <header>
         <div class="banner">
             <img src="banniere.png" alt="Logo de l'association">
-            <h1>Association de Protection de la Côte d'Albâtre</h1>
+            <h1>Association de Protection de la Côte d'Albâtre+</h1>
         </div>
         <nav>
             <ul>
