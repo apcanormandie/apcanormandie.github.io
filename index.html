@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Protection de la Côte d'Albâtre</title>
     <style>
-        /* styles.css */
-
-/* Styles pour le corps de la page */
-body {
+        body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
-/* Styles pour l'en-tête */
+p {
+    font-size:large;
+}
+
 header {
-    background-color: #62e888;
+    background-color: #6fe691;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: relative;
 }
 
-/* Styles pour la bannière/logo */
 .banner {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centre horizontalement les éléments */
+    justify-content: center; 
 }
 
 .banner img {
@@ -38,10 +37,43 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
-/* Styles pour la navigation */
+#accueil {
+    text-align: center;
+    padding: 20px;
+}
+
+#accueil h2 {
+    font-size: 1.8em;
+}
+
+.image-container {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    margin: 0 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.legend p {
+    margin-top: 20px;
+    font-style: italic;
+    font-size:small;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -58,7 +90,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Styles pour les sections */
 section {
     padding: 20px;
 }
@@ -67,14 +98,42 @@ section h2 {
     font-size: 1.5em;
 }
 
-/* Styles pour le pied de page */
+#actions {
+    text-align: center;
+    padding: 20px;
+}
+
+#actions h2 {
+    font-size: 1.5em;
+}
+
+#actions p {
+    margin-bottom: 20px;
+}
+
+.newsletter-thumbnail {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.newsletter-thumbnail:hover {
+    border-color: #007bff;
+}
+
+.newsletter-thumbnail img {
+    max-width: 500px; 
+    height: auto;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
-
     </style>
 </head>
 <body>
@@ -86,7 +145,6 @@ footer {
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À Propos</a></li>
                 <li><a href="#actions">Actions</a></li>
                 <li><a href="#adherer">Adhésion</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -96,23 +154,38 @@ footer {
 
     <section id="accueil">
         <h2>Bienvenue sur notre site</h2>
-        <p>Notre association a pour but d’informer et de défendre les intérêts des riverains de la Communauté de Communes de la Côte d’Albâtre et des communes voisines concernés par des parcs éoliens existants et des projets d’extension ou de création de parc éoliens et de manière générale de mener des actions à empêcher la multiplication des éoliennes.L’association est apolitique et non confessionnelle. Elle composée d’actifs et de retraités, de femmes et hommes de toutes catégories professionnelles, qui ont à cœur de protéger notre territoire.</p>
-        <img src="image_accueil.jpg" alt="Image d'accueil">
-    </section>
-
-    <section id="apropos">
-        <h2>À Propos de Nous</h2>
-        <p>Notre association a pour mission de sensibiliser la population aux enjeux liés à l'énergie éolienne et de promouvoir des alternatives plus durables.</p>
+        <p>Notre association a pour but d’informer et de défendre les intérêts des riverains de la Communauté de Communes de la Côte d’Albâtre et des communes voisines concernés par des parcs éoliens existants et des projets d’extension ou de création de parc éoliens et de manière générale de mener des actions à empêcher la multiplication des éoliennes. L’association est apolitique et non confessionnelle. Elle composée d’actifs et de retraités, de femmes et d'hommes de toutes catégories professionnelles, qui ont à cœur de protéger notre territoire.</p>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="accueil.png" alt="Image d'accueil">
+            </div>
+            <div class="image-box">
+                <img src="accueil2.png" alt="Image d'accueil 2">
+            </div>
+        </div>
+        <div class="legend">
+            <p>1er résultat tangible de nos efforts : l'arrêté du préfet de la Seine-Maritime du 31 juillet refusant l’autorisation d’exploiter l’extension du parc éolien de Drosay Sasseville dit du Bois des Saules. VSB, le porteur du projet, dispose d’un délai de 2 mois pour déposer un recours contre l’Etat auprès du Tribunal Administratif, soit jusqu’au 30 septembre 2023.</p>
+            <p>Nous remercions tous ceux qui se sont mobilisés, notamment tous nos élus et particulièrement Messieurs Bertrand Bellanger (Président du Conseil départemental de Seine-Maritime) et Xavier Batut (Député de la Xe circonscription de Seine-Maritime).</p>
+        </div>
     </section>
 
     <section id="actions">
         <h2>Nos Actions</h2>
-        <ul>
-            <li>Organisation de manifestations</li>
-            <li>Pétitions en ligne</li>
-            <li>Plaidoyer auprès des autorités</li>
-        </ul>
-    </section>
+        <p>Découvrez notre lettre mensuelle :</p>
+        <div class="newsletter-thumbnail">
+            <a href="APCA lettre mensuelle Septembre 2023.pdf" target="_blank">
+                <img src="miniature_09_23.png" alt="Miniature de la lettre mensuelle">
+                <div class="legend"><p>Lettre mensuelle Septembre 2023</p></div>
+            </a>
+        </div>
+        <p>Disponible ci-dessous le procès verbal de l'Assemblée Genérale 2023 :</p>
+        <div class="newsletter-thumbnail">
+            <a href="APCA - PV - AG 2023.pdf" target="_blank">
+                <img src="miniature_pv.png" alt="Miniature de l'AG">
+                <div class="legend"><p>Assemblée Genérale juin 2023</p></div>
+            </a>
+        </div>
+    </section>    
 
     <section id="adherer">
         <h2>Nous soutenir en adhérant à l'association</h2>
@@ -125,7 +198,7 @@ footer {
     <section id="contact">
         <h2>Contactez-nous</h2>
         <p>N'hésitez pas à nous contacter pour en savoir plus sur notre association ou pour participer à nos actions.</p>
-        <p>Email : apcacontacts@gmail.com</p>
+        <p>Email : <a href="mailto:apcacontacts@gmail.com" target="_blank" rel="noopener noreferrer">apcacontacts@gmail.com</a></p>
     </section>
 
     <footer>
