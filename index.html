@@ -5,7 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Association de Protection de la Côte d'Albâtre</title>
     <style>
-        body {
+
+/* styles.css */
+
+/* Styles pour les appareils mobiles */
+@media screen and (max-width: 768px) {
+    /* Styles pour le corps de la page sur les appareils mobiles */
+    body {
+        font-size: 16px; /* Ajustez la taille de la police de base pour les petits écrans */
+    }
+
+    /* Styles pour l'en-tête sur les appareils mobiles */
+    header {
+        padding: 10px 0; /* Réduisez l'espace de l'en-tête */
+    }
+
+    /* Styles pour la bannière/logo sur les appareils mobiles */
+    .banner {
+        flex-direction: column; /* Empilez le logo et le titre verticalement */
+        align-items: center; /* Centrez les éléments */
+    }
+
+    .banner img {
+        max-width: 100%; /* Ajustez la largeur maximale du logo pour s'adapter à l'écran */
+        margin: 10px 0; /* Ajoutez de l'espace autour du logo */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Réduisez la taille du titre */
+    }
+
+    /* Styles pour les sections sur les appareils mobiles */
+    section {
+        padding: 15px; /* Réduisez l'espace à l'intérieur des sections */
+    }
+
+    section h2 {
+        font-size: 1.2em; /* Réduisez la taille des titres de section */
+    }
+
+    /* Styles pour les images de la section "Accueil" sur les appareils mobiles */
+    .image-container {
+        flex-direction: column; /* Empilez les images verticalement */
+        margin: 20px 0; /* Ajoutez de l'espace autour des images */
+    }
+
+    .image-box {
+        margin: 10px 0; /* Ajoutez de l'espace entre les images */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ajustez la largeur maximale des images pour s'adapter à l'écran */
+    }
+
+    .legend p {
+        margin-top: 10px; /* Réduisez l'espace autour des légendes d'images */
+    }
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
